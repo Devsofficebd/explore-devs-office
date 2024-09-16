@@ -1,0 +1,558 @@
+<script>
+  // Loop for the products or addons
+  const plugins = [
+    {
+      logo: "#",
+      title: "Dynamic Downloads",
+      description:
+        "A plugin for secure, private downloads. Effortlessly manage and download any file with dynamic ease.",
+      downloadCount: "Latest Version",
+      link: "https://devsoffice.com/contact-us", // Add your actual link here
+      version: "1.0.0",
+      docs: "https://example.com/"
+    },
+    {
+      logo: "#",
+      title: "Page to Cart Connector",
+      description:
+        "Automatically adds a specific product to the cart when a visitor views a page. Simplify product purchasing!",
+      downloadCount: "Version 2.0 Released",
+      link: "https://devsoffice.com/contact-us", // Add your actual link here
+      version: "2.0.0",
+      docs: "https://example.com/"
+    },
+    {
+      logo: "#",
+      title: "Devs Logout",
+      description:
+        "Redirect users to a selected page after logout for a seamless user experience.",
+      downloadCount: "Latest Version",
+      link: "https://devsoffice.com/contact-us", // Add your actual link here
+      version: "1.0.0",
+      docs: "https://example.com/"
+    },
+    {
+      logo: "#",
+      title: "Time Slots Capacity",
+      description:
+        "Add and manage time slots with capacity for WooCommerce, enhancing product scheduling and availability.",
+      downloadCount: "Exclusive Addon",
+      link: "https://devsoffice.com/contact-us", // Add your actual link here
+      version: "1.2.0",
+      docs: "https://example.com/"
+    },
+    {
+      logo: "#",
+      title: "Hide URL Hovering",
+      description:
+        "Conceal the default URL on hover, enhancing privacy and aesthetic appeal.",
+      downloadCount: "Update Available",
+      link: "https://devsoffice.com/contact-us", // Add your actual link here
+      version: "1.2.0",
+      docs: "https://example.com/"
+    },
+    {
+      logo: "#",
+      title: "Dynamic Popup",
+      description:
+        "Display your website inside a responsive iframe popup for a dynamic user experience.",
+      downloadCount: "Exclusive Addon",
+      link: "https://devsoffice.com/contact-us", // Add your actual link here
+      version: "1.0.0",
+      docs: "https://example.com/"
+    },
+    {
+      logo: "#",
+      title: "Post Page View Status",
+      description:
+        "Mark posts as viewed with a click, indicating completion status for better tracking.",
+      downloadCount: "Newly Added",
+      link: "https://devsoffice.com/contact-us", // Add your actual link here
+      version: "1.0.0",
+      docs: "https://example.com/"
+    },
+  ];
+  // Loop for the Stats Data
+  const stats = [
+    {
+      value: "150+",
+      label: "Projects done",
+    },
+    {
+      value: "150+",
+      label: "Supports",
+    },
+    {
+      value: "125+",
+      label: "Total Reviews",
+    },
+    {
+      value: "Super Fast",
+      label: "Response",
+    },
+  ];
+
+  // Loop of testimonials
+  const testimonials = [
+    {
+      img: "assets/images/ruben.jpg",
+      name: "Ruben",
+      stars: 5,
+      review:
+        "Ashiq's professionalism, attention to detail, quick responsiveness, and punctual delivery time were exemplary throughout our project collaboration. From the initial discussion to the final delivery, Ashiq demonstrated expertise and dedication, ensuring every aspect was meticulously reviewed and addressed. His quick responses and timely delivery despite tight deadlines were highly appreciated. I would highly recommend him for any future projects.",
+    },
+    {
+      img: "assets/images/tim.jpg",
+      name: "Tim Felsky",
+      stars: 5,
+      review:
+        "Same day, fast and efficient service. Always knows how to solve the problem. Thank you for your help once again.",
+    },
+    {
+      img: "assets/images/hardeep.jpg",
+      name: "Hardeep",
+      stars: 5,
+      review:
+        "He is very good at what he does and very proactive. Our requirements were complex, and he completed them as requested.",
+    },
+  ];
+
+  // loop for services
+  const pluginData = [
+    {
+      img: "#",
+      title: "Website Development",
+      description:
+        "Building Dynamic and Customizable WordPress Websites Tailored to Your Needs",
+        installs: "20% Off",
+      installUrl: "https://devsoffice.com/contact-us",
+    },
+    {
+      img: "#",
+      title: "Search Engine Optimization",
+      description:
+        "Enhancing Your Online Presence with Advanced SEO Strategies and Tools",
+      installs: "25% Off",
+      installUrl: "https://devsoffice.com/contact-us",
+    },
+    {
+      img: "#",
+      title: "Booking And Appointment",
+      description:
+        "Streamlining Your Scheduling with Efficient Booking and Appointment Systems",
+      installs: "25% Off",
+      installUrl: "https://devsoffice.com/contact-us",
+    },
+    {
+      img: "#",
+      title: "Learning Management System",
+      description:
+        "Enhancing Your Online Learning Experience with Dynamic Learning Management System",
+      installs: "25% Off",
+      installUrl: "https://devsoffice.com/contact-us",
+    },
+    {
+      img: "#",
+      title: "Membership Website",
+      description:
+        "Building Dynamic and Customizable WordPress Membership Websites Tailored to Your Needs",
+      installs: "25% Off",
+      installUrl: "https://devsoffice.com/contact-us",
+    },
+    {
+      img: "#",
+      title: "E-Commerce Website",
+      description:
+        "Developing Robust E-Commerce Websites for Seamless Online Shopping Experience",
+      installs: "30% Off",
+      installUrl: "https://devsoffice.com/contact-us",
+    },
+    {
+      img: "#",
+      title: "Customization Of CMS Website",
+      description:
+        "Tailoring CMS Websites to Meet Your Unique Business Requirements",
+      installs: "20% Off",
+      installUrl: "https://devsoffice.com/contact-us",
+    },
+    {
+      img: "#",
+      title: "WordPress Maintenance Services",
+      description:
+        "Providing Ongoing WordPress Maintenance for Optimal Performance and Security",
+      installs: "15% Off",
+      installUrl: "https://devsoffice.com/contact-us",
+    },
+    {
+      img: "#",
+      title: "Elementor Website Design",
+      description:
+        "Crafting Stunning Elementor Websites with Creative Design Elements",
+      installs: "30% Off",
+      installUrl: "https://devsoffice.com/contact-us",
+    },
+  ];
+
+  // Array of blog cards
+  const cardData = [
+    {
+      badge: "📘 Tutorial",
+      date: "14 days ago",
+      title:
+        "Redirect users to their profile in Buddypress in 2 minutes using free code",
+      description:
+        "If you’re looking to enhance user experience on your WordPress site, Redirect users to their profile in Buddypress in 2 minutes using free code can be a great way to streamline navigation for your users. In this post, we’ll walk you through the steps to achieve this using a simple code snippet and the WP Code plugin.",
+      authorImg:
+        "https://devsofficebd.github.io/explore-devs-office/images/image%20logo%20ashiq.png",
+      authorName: "Ashiq Hosen",
+      readMoreUrl:
+        "https://devsoffice.com/redirect-users-to-their-profile-in-buddypress/",
+    },
+    {
+      badge: "📘 Article",
+      date: "14 days ago",
+      title: "Move LearnDash Lesson Timer to above",
+      description:
+        "LearnDash is a powerful LMS (Learning Management System) that allows you to create and manage online courses. While it provides a robust set of features out of the box, sometimes you might want to tweak the look and feel of certain elements to better suit your needs.",
+      authorImg:
+        "https://devsofficebd.github.io/explore-devs-office/images/image%20logo%20ashiq.png",
+      authorName: "Ashiq Hosen",
+      readMoreUrl:
+        "https://devsoffice.com/move-learndash-lesson-timer-to-above/",
+    },
+  ];
+
+  // Dynamic Hero section
+  // Data for the hero section
+  const heroData = {
+    badge: {
+      text1: "New",
+      text2: "🎉 We are here. See what's new",
+    },
+    heading: "Innovative Web Solutions, Tailored to Your Needs",
+    description:
+      "We specialize in custom plugin development, website design, membership platforms, LMS systems, and more. Whether you're looking to build a powerful online presence or need specific solutions, our expert team delivers high-quality, scalable websites that drive success. Let's create something exceptional together.",
+    ctaButtons: [
+      { text: "Learn more", url: "#" },
+      { text: "Watch video", url: "#" },
+    ],
+  };
+
+  // Addons page hero text
+  const contentData = {
+    heading: "Take your website to the next level",
+    borderClass: "border",
+    description:
+      "Download and install these additional tools to significantly expand the capabilities and features of your website. By using these add-ons, you'll be able to unlock new functionalities that can improve user experience, streamline operations, and offer more customization options, making your website more dynamic and versatile.",
+  };
+
+  //whatsapp cta
+  const whatsappCtaData = {
+    heading: "Need instant support?<br />Chat with us on WhatsApp!",
+    whatsappLink: "https://wa.me/8801738034690",
+    chatButtonText: "Chat Now Via WhatsApp",
+    liveChatButtonText: "Open Live Chat!",
+    liveChatLink: "javascript:;", // Add the URL for the live chat if available
+  };
+</script>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabs with Plugin Cards</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="tabs">
+      <div class="tab-header">
+        <a
+          href="https://devsoffice.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img class="our_logo" src="assets/images/logo.png" alt=""
+        /></a>
+        <div class="active" data-tab="tab-1">Website Powerup</div>
+        <div data-tab="tab-2">Testimonials</div>
+        <div data-tab="tab-3">Get an expert</div>
+      </div>
+      <div class="tab-content">
+        <div class="tab-pane active" id="tab-1">
+          <div
+            id="dynamic-content"
+            style="padding: 40px 0px 80px 0px; text-align: center"
+            class="our_text_section"
+          >
+            <script>
+              // Function to generate the content HTML dynamically
+              function generateContent(data) {
+                const container = document.getElementById("dynamic-content");
+                const contentHtml = `
+                <h1>${data.heading}</h1>
+                <div class="${data.borderClass}"></div>
+                <p style="margin: 0px; margin: auto">
+                  ${data.description}
+                </p>
+              `;
+                container.innerHTML = contentHtml;
+              }
+
+              // Call the function to generate the content
+              generateContent(contentData);
+            </script>
+          </div>
+
+          <div id="plugin-container" class="plugin-grid">
+            <script>
+
+  // Loop through the plugin array and generate HTML dynamically
+  const pluginContainer = document.getElementById("plugin-container");
+
+plugins.forEach((plugin) => {
+  const pluginCard = `
+    <div class="plugin-card featured">
+      <div class="plugin-info">
+        <div class="plugin-text">
+          <img
+            src="${plugin.logo}"
+            alt="${plugin.title} Logo"
+            class="plugin-logo"
+          />
+          <h3>${plugin.title}</h3>
+          <p>${plugin.description}</p>
+        </div>
+      </div>
+      <div class="same-row">
+      <a href="${plugin.link}" target="_blank" class="install-btn">
+        Install Now <span class="version">${plugin.version}</span>
+        <a href="${plugin.docs}" target="_blank" class="docs-btn">
+        Docs</a>
+        </div>
+      <div class="featured-badge">${plugin.downloadCount}</div>
+    </div>
+  `;
+  pluginContainer.innerHTML += pluginCard;
+});
+
+            </script>
+          </div>
+        </div>
+        <div class="tab-pane" id="tab-2">
+          <div id="projectFacts" class="sectionClass">
+            <div class="fullWidth">
+              <div id="stats-container" class="projectFactsWrap">
+                <script>
+                  // Loop through the stats array and generate HTML dynamically
+                  const statsContainer =
+                    document.getElementById("stats-container");
+
+                  stats.forEach((stat) => {
+                    const statItem = `
+                      <div class="item" style="visibility: visible">
+                        <p class="number">${stat.value}</p>
+                        <p>${stat.label}</p>
+                      </div>
+                    `;
+                    statsContainer.innerHTML += statItem;
+                  });
+                </script>
+              </div>
+            </div>
+          </div>
+          <div class="testimonials">
+            <div class="testimonial-inner">
+              <h1>Testimonial</h1>
+              <div class="border"></div>
+
+              <div id="testimonials-container" class="test_row">
+                <script>
+                  // Function to generate star icons
+                  function generateStars(starCount) {
+                    let starsHTML = "";
+                    for (let i = 0; i < starCount; i++) {
+                      starsHTML += '<i class="fas fa-star"></i>';
+                    }
+                    return starsHTML;
+                  }
+
+                  // Loop through the testimonials array and generate HTML dynamically
+                  const testimonialsContainer = document.getElementById(
+                    "testimonials-container"
+                  );
+
+                  testimonials.forEach((testimonial) => {
+                    const testimonialItem = `
+                      <div class="test_col">
+                        <div class="testimonial">
+                          <img src="${testimonial.img}" alt="${
+                      testimonial.name
+                    }" />
+                          <div class="name">${testimonial.name}</div>
+                          <div class="stars">
+                            ${generateStars(testimonial.stars)}
+                          </div>
+                          <p>${testimonial.review}</p>
+                        </div>
+                      </div>
+                    `;
+                    testimonialsContainer.innerHTML += testimonialItem;
+                  });
+                </script>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="tab-3">
+          <section id="dynamic-hero" class="hero">
+            <script>
+              // Function to generate hero section HTML dynamically
+              function generateHeroSection(data) {
+                const container = document.getElementById("dynamic-hero");
+                const heroHtml = `
+                <div class="badge">
+                  <span>${data.badge.text1}</span>
+                  <span>${data.badge.text2}</span>
+                </div>
+                <h1>${data.heading}</h1>
+                <p>${data.description}</p>
+                <div class="cta-buttons">
+                  ${data.ctaButtons
+                    .map(
+                      (button) => `
+                    <a href="${button.url}" class="install-btn">${button.text}</a>
+                  `
+                    )
+                    .join("")}
+                </div>
+              `;
+                container.innerHTML = heroHtml;
+              }
+
+              // Call the function to generate the hero section
+              generateHeroSection(heroData);
+            </script>
+          </section>
+          <div id="dynamic-plugin-cards-container" class="plugin-grid services">
+            <script>
+              // Array of plugin data with unique values
+
+              // Function to generate plugin cards dynamically
+              function generatePluginCards(data) {
+                const container = document.getElementById(
+                  "dynamic-plugin-cards-container"
+                );
+                data.forEach((plugin, index) => {
+                  const pluginCard = `
+        <div class="plugin-card featured" id="plugin-card-${index}">
+          <div class="plugin-info">
+            <div class="plugin-text">
+              <img src="${plugin.img}" alt="${plugin.title} Logo" class="plugin-logo" />
+              <h3>${plugin.title}</h3>
+              <p>${plugin.description}</p>
+            </div>
+          </div>
+          <a href="${plugin.installUrl}" target="_blank" class="install-btn">Get Started</a>
+          <div class="featured-badge">
+            ${plugin.installs}
+          </div>
+        </div>
+      `;
+                  container.innerHTML += pluginCard;
+                });
+              }
+
+              // Call the function to generate the plugin cards
+              generatePluginCards(pluginData);
+            </script>
+          </div>
+
+          <section class="devsoffice-blog-section">
+            <div id="dynamic-cards-container" class="devsoffice-blog-cards">
+              <script>
+                // Function to generate card HTML dynamically
+                function generateCards(data) {
+                  const container = document.getElementById(
+                    "dynamic-cards-container"
+                  );
+                  data.forEach((card, index) => {
+                    const cardHtml = `
+                      <div class="devsoffice-card" id="devsoffice-card-${index}">
+                        <div class="devsoffice-card-header">
+                          <span class="devsoffice-badge">${card.badge}</span>
+                          <span class="devsoffice-date">${card.date}</span>
+                        </div>
+                        <h3>${card.title}</h3>
+                        <p>${card.description}</p>
+                        <div class="devsoffice-card-footer">
+                          <div class="devsoffice-author">
+                            <img src="${card.authorImg}" alt="Author" />
+                            <span>${card.authorName}</span>
+                          </div>
+                          <a href="${card.readMoreUrl}" class="devsoffice-read-more">Read more →</a>
+                        </div>
+                      </div>
+                    `;
+                    container.innerHTML += cardHtml;
+                  });
+                }
+
+                // Call the function to generate the cards
+                generateCards(cardData);
+              </script>
+            </div>
+          </section>
+          <div id="whatsapp-cta" class="whatsapp-cta">
+            <!-- Content will be inserted here dynamically -->
+          </div>
+
+          <script>
+            // Function to generate the WhatsApp CTA HTML dynamically
+            function generateWhatsAppCta(data) {
+              const container = document.getElementById("whatsapp-cta");
+              const contentHtml = `
+                <h1>
+                  ${data.heading}
+                </h1>
+                <div class="same-row">
+                <a
+                  href="${data.whatsappLink}"
+                  target="_blank"
+                  class="install-btn"
+                >
+                  ${data.chatButtonText}
+                </a>
+
+                <a
+                  class="install-btn"
+                  href="${data.liveChatLink}"
+                  onclick="tidioChatApi.display(true);tidioChatApi.open()"
+                >
+                  ${data.liveChatButtonText}
+                </a>
+                </div>
+              `;
+              container.innerHTML = contentHtml;
+            }
+
+            // Call the function to generate the WhatsApp CTA content
+            generateWhatsAppCta(whatsappCtaData);
+          </script>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script
+      src="//code.tidio.co/towwccnptnidhqhmr4c0ewwjlp1eeic7.js"
+      async
+    ></script>
+  </body>
+</html>
