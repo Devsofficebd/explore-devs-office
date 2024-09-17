@@ -105,7 +105,7 @@ img.our_logo {
   align-items: stretch;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 15px;
 }
 
 .plugin-card {
