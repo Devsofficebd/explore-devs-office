@@ -95,21 +95,21 @@
   // Loop of testimonials
   const testimonials = [
     {
-      img: "assets/images/ruben.jpg",
+      img: "ruben.jpg",
       name: "Ruben",
       stars: 5,
       review:
         "Ashiq's professionalism, attention to detail, quick responsiveness, and punctual delivery time were exemplary throughout our project collaboration. From the initial discussion to the final delivery, Ashiq demonstrated expertise and dedication, ensuring every aspect was meticulously reviewed and addressed. His quick responses and timely delivery despite tight deadlines were highly appreciated. I would highly recommend him for any future projects.",
     },
     {
-      img: "assets/images/tim.jpg",
+      img: "tim.jpg",
       name: "Tim Felsky",
       stars: 5,
       review:
         "Same day, fast and efficient service. Always knows how to solve the problem. Thank you for your help once again.",
     },
     {
-      img: "assets/images/hardeep.jpg",
+      img: "hardeep.jpg",
       name: "Hardeep",
       stars: 5,
       review:
@@ -392,7 +392,7 @@ plugins.forEach((plugin) => {
                     const testimonialItem = `
                       <div class="test_col">
                         <div class="testimonial">
-                          <img src="${testimonial.img}" alt="${
+                          <img src="assets/images/${testimonial.img}" alt="${
                       testimonial.name
                     }" />
                           <div class="name">${testimonial.name}</div>
