@@ -46,10 +46,8 @@ body {
 
 .tabs {
     width: 100%;
-    /* margin: 50px auto; */
-    /* max-width: 1200px; */
     background-color: #f5f7fa;
-    margin-left: -20px;
+    margin-left: -15px;
     padding: 30px;
     position: absolute;
     top: 0;
@@ -103,9 +101,11 @@ img.our_logo {
 }
 
 .plugin-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 30px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .plugin-card {
@@ -121,8 +121,37 @@ img.our_logo {
     align-items: start;
     justify-content: center;
     transition: 0.3s;
+    width: 30%;
 }
-
+@media  screen and (min-width: 856px) and (max-width: 981px) {
+  .plugin-card {
+    width: 30%;
+}
+}
+@media screen and (min-width: 500px) and (max-width: 855px) {
+  .plugin-card {
+    width: 45%;
+}
+.plugin-grid {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+}
+@media screen and (min-width: 20px) and (max-width: 621px) {
+  .plugin-card {
+    width: 100%;
+}
+.plugin-grid {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+}
 div.plugin-card:hover {
   box-shadow: 10px 10px 0px #214eb5;
   transition: 0.3s;
