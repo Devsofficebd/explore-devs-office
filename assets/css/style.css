@@ -35,7 +35,9 @@
     font-weight: 600;
     font-style: italic;
 }
-
+h1{
+line-height: 1em !important;
+}
 /* General usage */
 body {
     font-family: 'Poppins', sans-serif;
